@@ -24,9 +24,11 @@ class HomePage extends StatelessWidget {
 
            return MobileLayout();
          }
-
+          
         }
+        
 
     );
+    
   }
 }

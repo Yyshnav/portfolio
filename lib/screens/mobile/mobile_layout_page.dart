@@ -4,7 +4,9 @@ import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/tablet/tablet_layout_page.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
+import 'package:porfolio/screens/widgets/myservice_widgets.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class MobileLayout extends StatefulWidget {
   const MobileLayout({super.key});
@@ -65,47 +67,66 @@ class _MobileLayoutState extends State<MobileLayout> {
                 ),
                 Container(
                   width: size.width,
-
-                  margin: EdgeInsets.symmetric(horizontal: size.width*0.05),
+                  margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CountWidget(size: size,text1: "14",text2: "Years of",text3: "Experience",),
-                      const SizedBox(height: 20,),
+                      CountWidget(size: size, text1: "6+", text2: "Month of", text3: "Intern Experience"),
+                      const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
-
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "50+",text2: "Projects",text3: "Completed",),
-                      const SizedBox(height: 20,),
+                      const SizedBox(height: 20),
+                      CountWidget(size: size, text1: "5+", text2: "Projects", text3: "Completed"),
+                      const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
-
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
-                      const SizedBox(height: 20,),
+                      const SizedBox(height: 20),
+                      CountWidget(size: size, text1: "10+", text2: "Workshop", text3: "Completed"),
+                      const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
-
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
-
+                      const SizedBox(height: 20),
+                      CountWidget(size: size, text1: "10+", text2: "Technology", text3: "Explored"),
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: size.height * 0.12),
+                Container(
+                  color: AppColors.ebony,
+                  padding: EdgeInsets.symmetric(vertical: size.width * 0.05),
+                  child: Column(
+                    children: [
+                      GradientText(
+                        "My Quality Services",
+                        colors: [
+                          AppColors.studio,
+                          AppColors.paleSlate,
+                        ],
+                        style: TextStyle(
+                          fontSize: size.width * 0.05, // Increased font size
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: size.height * 0.02),
+                     
+                      SizedBox(
+                        height: size.width * 0.09,
+                      ),
+                      MyServicesWidget(size: size),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

@@ -33,7 +33,7 @@ class _RotatingImageContainerState extends State<RotatingImageContainer> {
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage('assets/images/profile_new.jpg')
+            image: AssetImage('assets/images/1000040091.jpg')
           ),
           
           border: Border.all(color: AppColors.studio,width: 1.2),

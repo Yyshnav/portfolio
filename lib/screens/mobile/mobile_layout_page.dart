@@ -57,7 +57,9 @@ class _MobileLayoutState extends State<MobileLayout> {
                         SizedBox(
                           height: 20,
                         ),
-                        Social_Tab(size: size)
+                        Social_Tab(size: size),
+                        SizedBox(height: 30),
+                        _buildExperienceAndEducation(size),
                       ],
                     ),
                   ],
@@ -72,7 +74,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CountWidget(size: size, text1: "6+", text2: "Month of", text3: "Intern Experience"),
+                      CountWidget(
+                          size: size,
+                          text1: "6+",
+                          text2: "Month of",
+                          text3: "Intern Experience"),
                       const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
@@ -80,7 +86,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                         endIndent: size.width * 0.05,
                       ),
                       const SizedBox(height: 20),
-                      CountWidget(size: size, text1: "5+", text2: "Projects", text3: "Completed"),
+                      CountWidget(
+                          size: size,
+                          text1: "5+",
+                          text2: "Projects",
+                          text3: "Completed"),
                       const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
@@ -88,7 +98,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                         endIndent: size.width * 0.05,
                       ),
                       const SizedBox(height: 20),
-                      CountWidget(size: size, text1: "10+", text2: "Workshop", text3: "Completed"),
+                      CountWidget(
+                          size: size,
+                          text1: "10+",
+                          text2: "Workshop",
+                          text3: "Completed"),
                       const SizedBox(height: 20),
                       Divider(
                         color: AppColors.paleSlate,
@@ -96,7 +110,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                         endIndent: size.width * 0.05,
                       ),
                       const SizedBox(height: 20),
-                      CountWidget(size: size, text1: "10+", text2: "Technology", text3: "Explored"),
+                      CountWidget(
+                          size: size,
+                          text1: "10+",
+                          text2: "Technology",
+                          text3: "Explored"),
                     ],
                   ),
                 ),
@@ -119,7 +137,6 @@ class _MobileLayoutState extends State<MobileLayout> {
                         ),
                       ),
                       SizedBox(height: size.height * 0.02),
-                     
                       SizedBox(
                         height: size.width * 0.09,
                       ),
@@ -134,4 +151,83 @@ class _MobileLayoutState extends State<MobileLayout> {
       ),
     );
   }
+}
+
+Widget _buildExperienceAndEducation(Size size) {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        GradientText(
+          "Experience & Education",
+          colors: [
+            AppColors.studio,
+            AppColors.paleSlate,
+          ],
+          style: TextStyle(
+            fontSize: size.width * 0.035, // Increased font size
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        SizedBox(height: size.height * 0.02),
+        // Experience List
+        Text(
+          "Relevant Experience",
+          style: TextStyle(
+            fontSize: size.width * 0.025, // Increased font size
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(height: size.height * 0.01),
+        Text(
+          "- Flutter Developer Intern at XYZ Company (6 months): Worked on building mobile apps,\n UI design, and API integration.",
+          style: TextStyle(
+            fontSize: size.width * 0.018, // Increased font size
+            fontFamily: 'Poppins',
+            color: Colors.white,
+          ),
+        ),
+        Text(
+          "- Freelance Mobile Developer: Developed multiple applications for small businesses with\n custom features.",
+          style: TextStyle(
+            fontSize: size.width * 0.018, // Increased font size
+            fontFamily: 'Poppins',
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(height: size.height * 0.03),
+        // Education List
+        Text(
+          "Educational Qualifications",
+          style: TextStyle(
+            fontSize: size.width * 0.025, // Increased font size
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(height: size.height * 0.01),
+        Text(
+          "- Bachelor of Science in Computer Science, ABC University",
+          style: TextStyle(
+            fontSize: size.width * 0.018, // Increased font size
+            fontFamily: 'Poppins',
+            color: Colors.white,
+          ),
+        ),
+        Text(
+          "- Completed Certified Flutter Developer Course",
+          style: TextStyle(
+            fontSize: size.width * 0.018, // Increased font size
+            fontFamily: 'Poppins',
+            color: Colors.white,
+          ),
+        ),
+      ],
+    ),
+  );
 }

@@ -111,21 +111,24 @@ const projectData = {
     tags: ['Flutter', 'Dart', 'Django REST', 'Django Channels', 'Celery & Redis', 'WebSockets', 'Google Maps API', 'Firebase FCM', 'PostgreSQL', 'Freelance'],
     github: 'https://github.com/Yyshnav'
   },
-  'mobile-proto': {
-    badge: 'Mobile Blueprint',
-    title: 'Mobile App Prototype',
-    subtitle: 'Reactive Cross-Platform Mobile Architecture Blueprint',
-    image: null,
-    description: 'A modular, scalable Flutter UI foundation built to demonstrate best practices in RESTful API consumption, state management, and native device feature integrations.',
+  'crews-auto': {
+    badge: 'Featured Mobile App',
+    title: 'Crews Auto — Premium Auto Repair Shop',
+    subtitle: 'Flutter · Provider · Firebase Backend (Auth & Firestore) · Service Booking & Tracking',
+    image: 'assets/images/crews_auto.png',
+    description: 'A modern automotive repair and vehicle service application built in Flutter with Provider state management and a complete Firebase backend. Enables vehicle owners to authenticate securely, browse multi-category automotive repair services, claim promotional service discounts, schedule repair appointments, and track vehicle servicing milestones in real time.',
     features: [
-      'Modern Material 3 and iOS Cupertino compliant design components.',
-      'Robust HTTP interceptor layer with automatic token refresh and offline caching.',
-      'Dynamic dark/light theme switching with persistent user preferences.'
+      'Brand Onboarding & Authentication: Clean splash walkthrough, secure email/social sign-in, and persistent user session management.',
+      'Dynamic Service Catalog: Interactive category grid for periodic servicing, sound systems, engine diagnostics, oil changes, and custom maintenance.',
+      'Promotions & Discount Engine: Dynamic promotional carousel highlighting seasonal discounts (e.g. 20% Promo) and special maintenance packages.',
+      'Live Service & Maintenance Tracking: Real-time status indicators (Scheduled, In Progress, Testing, Completed) allowing car owners to monitor ongoing service jobs.',
+      'Customer Profile & Service History: Personalized customer dashboard with past maintenance records, active requests, and instant notification alerts.'
     ],
-    architecture: 'Clean architecture separating Data, Domain, and Presentation layers with BLoC / Provider state management.',
-    impact: 'Serves as an internal scaffolding blueprint, cutting initial mobile app bootstrapping time by ~40%.',
-    tags: ['Flutter', 'Dart', 'RESTful APIs', 'BLoC / Provider', 'Firebase Auth'],
-    github: 'https://github.com/Yyshnav'
+    architecture: 'Layered Flutter architecture leveraging Provider for reactive state management, clean routing structure, and Firebase as the complete backend (Firebase Authentication for user credentials and Cloud Firestore for real-time service requests, booking status, and catalog data).',
+    archFlow: ['Flutter Mobile UI', 'Provider State Management', 'Firebase Auth', 'Firebase Firestore Backend'],
+    impact: 'Provides vehicle owners with a frictionless booking experience and transparent real-time status updates on active repair jobs.',
+    tags: ['Flutter', 'Dart', 'Provider', 'Firebase Backend', 'Cloud Firestore', 'Service Booking', 'Live Tracking'],
+    github: 'https://github.com/Yyshnav/Crews-Auto-.git'
   },
   'driving-test': {
     badge: 'IoT & Mobile Hardware',
@@ -141,22 +144,6 @@ const projectData = {
     architecture: 'Embedded C microcontroller code transmitting sensor data over IoT gateways to a Python server and Flutter frontend.',
     impact: 'Eliminated human bias and subjective scoring in driver testing evaluations with 100% telemetry accuracy.',
     tags: ['Arduino', 'Embedded C', 'Python', 'Dart', 'Flutter', 'IoT Sensors'],
-    github: 'https://github.com/Yyshnav'
-  },
-  'crews-auto': {
-    badge: 'Mobile & Web Platform',
-    title: 'Crews Auto & Vehicle Service App',
-    subtitle: 'Vehicle Management & Maintenance Scheduling Ecosystem',
-    image: null,
-    description: 'An intuitive automotive service platform enabling vehicle owners to book repairs, track service stages in real-time, and process payments effortlessly.',
-    features: [
-      'Live maintenance tracking with visual stage indicators (Inspection, Parts, Testing, Done).',
-      'Automated service history logbook with digital diagnostic invoices.',
-      'Integrated payment gateway for secure credit card and digital wallet settlements.'
-    ],
-    architecture: 'Cross-platform Flutter mobile client and React web admin panel backed by Firebase Cloud Firestore and Cloud Functions.',
-    impact: 'Streamlined garage appointment management and elevated customer satisfaction with real-time updates.',
-    tags: ['Flutter', 'React.js', 'Firebase', 'Payment Gateway', 'Cloud Functions'],
     github: 'https://github.com/Yyshnav'
   },
   'moto-hub': {

@@ -53,6 +53,62 @@ function initTimelineTabs() {
    Project Data Dictionary for Interactive Modal (With Image Support)
    ========================================================================== */
 const projectData = {
+  'pulmoguard-ai': {
+    badge: 'Flagship AI & IoT Diagnostics (2026)',
+    title: 'PulmoGuard AI — Pulmonary Disease Prediction & Monitoring',
+    subtitle: 'Vision Transformer (ViT) Chest X-Ray Screening & ESP32 Wearable Telemetry',
+    image: 'assets/images/project.png',
+    description: 'An end-to-end intelligent pulmonary disease screening and real-time biometric monitoring platform. Features a custom Vision Transformer (ViT) deep learning model for multi-class chest X-ray classification (Pneumonia, Tuberculosis, and COVID-19) paired with an ESP32 wearable unit streaming biometric SpO2, heart rate, and GSR stress signals to a Flask/MySQL backend.',
+    features: [
+      'Vision Transformer (ViT) Architecture: Self-attention patch mechanism trained on Kaggle chest X-ray datasets for robust multi-class pulmonary classification.',
+      'Wearable IoT Telemetry Unit: ESP32 hardware streaming real-time SpO2, pulse rate (MAX30102 sensor), and galvanic skin response (GSR stress sensor).',
+      'Automated Health Scoring Engine: Custom diagnostic algorithm calculating composite pulmonary distress risk scores.',
+      'Flask & MySQL REST API: High-throughput microservice backend handling biometric ingestion, JWT authentication, and model inference.',
+      'Caregiver Alert Dispatch: Automated real-time push notifications dispatched to companion mobile applications when vital anomalies are detected.'
+    ],
+    architecture: 'Vision Transformer (ViT) trained using PyTorch and Hugging Face Transformers, integrated with an ESP32 IoT sensor pipeline streaming to a Flask REST API backend backed by MySQL relational tables and caregiver alert webhooks.',
+    archFlow: ['Chest X-Rays / ESP32 Sensors', 'ViT Model & PyTorch Inference', 'Flask REST API Backend', 'MySQL Health Records & Caregiver App'],
+    impact: 'Engineered a functional AI + hardware prototype capable of automated multi-class pulmonary risk screening with instant real-time telemetry.',
+    tags: ['Vision Transformer (ViT)', 'PyTorch', 'Computer Vision', 'Deep Learning', 'Flask', 'MySQL', 'ESP32 IoT', 'MAX30102', 'GSR', 'Medical AI'],
+    github: 'https://github.com/Yyshnav'
+  },
+  'grocerygo-app': {
+    badge: 'Quick-Commerce Mobile App',
+    title: 'GroceryGo — Hyper-Local Quick-Commerce App',
+    subtitle: 'Flutter & Riverpod · Dark-Store Discovery · Sub-15m Delivery · Razorpay',
+    image: null,
+    description: 'A hyper-local quick-commerce grocery delivery mobile application built in Flutter with Riverpod state management. Designed for lightning-fast sub-15-minute fulfillment with automated 5 km dark-store geofenced discovery, interactive deal filters, Razorpay payment gateway integration, and in-store QR self-checkout.',
+    features: [
+      '5 km Dark-Store Geofencing: Automatic geolocation mapping to discover and route orders to the nearest local fulfillment dark-store.',
+      'Sub-15-Minute Live Delivery Tracking: Real-time route tracking, rider ETA calculations, and stage-by-stage order lifecycle updates.',
+      'In-Store QR Self-Checkout: Native barcode/QR scanning allowing customers to scan physical items in stores and checkout digitally.',
+      'Razorpay Payment Gateway: Secure checkout supporting UPI, cards, and net banking with instant webhooks verification.',
+      'Real-Time Deal & Dynamic Filters: High-performance product catalog with category facets, discounts, and search auto-suggestions.'
+    ],
+    architecture: 'Reactive clean architecture powered by Riverpod state management, Flutter UI widgets, REST APIs for catalog & inventory sync, and Razorpay SDK integration for transactions.',
+    archFlow: ['Flutter Mobile Client', 'Riverpod Reactive State', 'RESTful Inventory APIs', 'Razorpay Payment Gateway & Live Maps'],
+    impact: 'Delivered an ultra-responsive quick-commerce UX with real-time dark-store discovery, instant checkout, and QR in-store capabilities.',
+    tags: ['Flutter', 'Dart', 'Riverpod', 'Razorpay', 'Quick-Commerce', 'QR Scanner', 'Google Maps API', 'REST APIs'],
+    github: 'https://github.com/Yyshnav'
+  },
+  'cv-prototypes': {
+    badge: 'Computer Vision & Deep Learning Prototypes',
+    title: 'Computer Vision Prototypes — YOLO & MediaPipe',
+    subtitle: 'Real-Time Object Detection, Crowd Analytics & Sign Language Gesture Recognition',
+    image: null,
+    description: 'A collection of deep learning and computer vision prototypes developed using PyTorch, TensorFlow, OpenCV, YOLO, and MediaPipe. Explores real-time spatial detection and human-computer interaction applications.',
+    features: [
+      'YOLO Object Detection: Fine-tuned models for real-time fire detection and crowd density counting from surveillance video streams.',
+      'MediaPipe + CNN Gesture Tracking: Hand landmark coordinate extraction paired with CNN classifiers for real-time sign language alphabet recognition.',
+      'Medical Transfer Learning: Prototyped ResNet and EfficientNet classifiers for skin disease, brain tumor, and eye disease classification on Kaggle datasets.',
+      'OpenCV Frame Processing Pipeline: Optimized multi-threaded frame extraction, CLAHE contrast enhancement, and bounding box rendering.'
+    ],
+    architecture: 'Deep learning pipelines built in PyTorch & TensorFlow, leveraging YOLOv8 for object localization and MediaPipe hand pose estimation fed into lightweight classification networks.',
+    archFlow: ['Camera Video Feeds', 'OpenCV Preprocessing', 'YOLO / MediaPipe Landmarks', 'PyTorch / TensorFlow Classifier'],
+    impact: 'Prototyped high-accuracy real-time gesture recognition and hazard detection running at 30+ FPS on edge hardware.',
+    tags: ['YOLO', 'MediaPipe', 'PyTorch', 'TensorFlow', 'OpenCV', 'Computer Vision', 'Deep Learning', 'ResNet / EfficientNet'],
+    github: 'https://github.com/Yyshnav'
+  },
   'fooddash-app': {
     badge: 'Featured Mobile App',
     title: 'FoodDash — Food Delivery App',

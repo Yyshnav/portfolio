@@ -1,18 +1,18 @@
-# Vaishnav A - Portfolio Website
+# Vaishnav A - AI/ML Engineer & Full-Stack Developer Portfolio
 
-A modern, responsive, and high-performance developer portfolio website built with pure **HTML5**, **CSS3**, and **JavaScript**.
+A modern, responsive, and high-performance developer portfolio website built with pure **HTML5**, **CSS3 (Vanilla)**, and **JavaScript**.
 
 ---
 
 ## 🌟 Features
 
-- **Rich Aesthetics**: Custom dark theme (`#07040d`, `#623fbd`, `#ec4899`), glassmorphism, animated ambient background glow, and SVG grid patterns.
-- **Dynamic Stats Counter**: Animated numbers highlighting experience, completed projects, workshops, and explored technologies.
-- **Experience & Education Timeline**: Dual-column timeline showcasing professional experience and academic achievements.
-- **Projects & Services Showcase**: Interactive cards detailing applications (IoT Driving Test, Crews Auto, Moto Hub, AdminUserApp, Weather App) with tech stack tags and GitHub repository links.
-- **Skills Matrix**: Interactive cards categorizing mobile frameworks, languages, backend systems, APIs, hardware/IoT, and UI/UX design tools.
-- **Interactive Contact Form**: Contact form with validation and instant visual feedback, alongside direct contact cards.
-- **Direct CV Download**: Direct access to download the latest PDF resume.
+- **Strategic Positioning**: Showcasing expertise across **Computer Vision & Deep Learning (Vision Transformers, CNNs, YOLO, MediaPipe)** and **Full-Stack Engineering (React.js, Flutter, Python/Django, Firebase)**.
+- **Relocation Ready**: Highlighting readiness for opportunities in **Dubai, UAE**.
+- **Interactive Project Modals**: Deep-dive modals for flagship projects including **PulmoGuard AI (ViT & IoT)**, **GroceryGo**, **WayToFresh**, and **INCO**.
+- **Categorized Skills Arsenal**: Dynamic filtering for **AI / ML & Vision**, **Mobile Apps**, **Frontend & Web**, **Backend & Cloud**, and **Tools**.
+- **Engineering Insights**: In-depth architectural case studies on Vision Transformers for medical imaging, real-time WebSocket telemetry, and frontend performance optimizations.
+- **Dual Experience Timeline**: Interactive tab switcher for professional engineering milestones and verified credentials (IIT Kharagpur NPTEL, IoT, Nexus).
+- **Direct WhatsApp & CV Access**: One-click resume download and direct WhatsApp messaging integration.
 - **100% Responsive**: Tailored for desktop, tablet, and mobile displays.
 
 ---

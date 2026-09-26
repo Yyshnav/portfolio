@@ -499,6 +499,27 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-full);
 }
 
+.hero-relocation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: #34d399;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.15rem;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.15);
+  letter-spacing: 0.02em;
+}
+
+.hero-relocation-badge i {
+  color: #10b981;
+}
+
 .hero-bio {
   color: var(--text-muted);
   font-size: 1.05rem;
